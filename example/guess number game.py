@@ -12,4 +12,3 @@ while guess_count < guess_limit:
         break
     if guess_count == guess_limit and  not did_guess:
         print(f'You lost the secret number was {secret_number} !!!')
-
