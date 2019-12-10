@@ -1,4 +1,6 @@
 numbers = [5, 2, 5, 2, 2]
 for x_count in numbers:
-    print("X" * x_count)
-
+    output = ""
+    for count in range(x_count):
+        output += "X"
+    print(output)
