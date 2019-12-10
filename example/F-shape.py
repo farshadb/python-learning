@@ -1,5 +1,4 @@
-for index in range(5):
-    if index == 0 or index == 2:
-        print("XXXXX")
-    else:
-        print("XX")
+numbers = [5, 2, 5, 2, 2]
+for index in numbers:
+    print("X" * index)
+
