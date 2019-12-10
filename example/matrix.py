@@ -7,3 +7,7 @@ matrix = [
 
 print(matrix)
 print(matrix[2][0])
+matrix.append(6)
+print(matrix)
+matrix.insert([0][0], 5)
+print(matrix)
