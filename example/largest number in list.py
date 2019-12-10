@@ -4,4 +4,7 @@ max_number = 0
 for index in numbers:
     if index > max_number:
         max_number = index
-print(max_number)
+    if index < min_number:
+        min_number = index
+print(f'maximum: {max_number}')
+print(f'minimum: {min_number}')
