@@ -1,4 +1,4 @@
-numbers_dictionary = {
+digits_mapping = {
     "1": "One",
     "2": "Two",
     "3": "Three",
@@ -14,5 +14,5 @@ numbers_dictionary = {
 phone = input("Enter your phone number: ")
 out_put_string = ''
 for digit in phone:
-    out_put_string += " " + numbers_dictionary.get(digit, "!")
+    out_put_string += " " + digits_mapping.get(digit, "!")
 print(out_put_string)
