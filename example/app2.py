@@ -7,4 +7,5 @@
 import utils
 
 numbers = [10, 3, 5, 50, 2, 4, 89]
-print(utils.find_max(numbers))
+maximum = utils.find_max(numbers)
+print(maximum)
