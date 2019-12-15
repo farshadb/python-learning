@@ -1,26 +1,22 @@
 def minion_game(string):
     given_string = string.upper()
-    vowel_sound = ['A', 'E', 'I', 'O', 'U']
-    substring = []
+    vowels = ['A', 'E', 'I', 'O', 'U']
+
     kevin_score = 0
     stuart_score = 0
 
-    length = len(given_string)
-    # find all substring and put it in substring array
-    for i in range(length):
-        for j in range(length + 1):
-            if given_string[i:j] != "":
-                substring.append(given_string[i:j])
-    # find stuart and kevin score
-    for i in range(len(substring)):
-        if substring[i][0] in vowel_sound:
-            kevin_score += 1
+    for i in range(len(given_string)):
+        if given_string[i] in vowels:
+            kevin_score += (len(given_string) - i)
         else:
-            stuart_score += 1
+            stuart_score += (len(given_string) - i)
+
     if kevin_score > stuart_score:
-        return print(f"Kevin {kevin_score}")
+        print("Kevin", kevin_score)
+    elif kevin_score < stuart_score:
+        print("Stuart", stuart_score)
     else:
-        return print(f"Stuart {stuart_score}")
+        print("Draw")
 
 
 if __name__ == '__main__':
